@@ -1,0 +1,5 @@
+¡Bienvenido a la Calculadora de Calificaciones del Estudiante!
+Ingresa modalidad de cursado (P/R): ¿Has aprobado ambas tareas del laboratorio? (s/n): Ingresa tu puntuación del 1er parcial (sobre 40): Ingresa tu puntuación del 2do parcial (sobre 60): Calculando la calificación final...
+Tu puntaje final es: 90.00
+Tu calificación es: Excelente
+Otra calificación?(s/n): Hasta luego!
