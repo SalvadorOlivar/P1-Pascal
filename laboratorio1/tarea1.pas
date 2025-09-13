@@ -7,9 +7,8 @@ if actividad = 'p' then
         PuntajeValidoParcial := True
       else
         PuntajeValidoParcial := False
-    end;
-
-if actividad = 's' then
+    end
+else
     begin
       if (puntajeObtenido >= 0) and (puntajeObtenido <= 60) then
         PuntajeValidoParcial := True
@@ -22,20 +21,16 @@ end;
 function CalcularTotalPuntos(modalidad : char; parcial1, parcial2: real; cuestionarios: integer): real;
 begin
 if modalidad = PRESENCIAL then
-  begin
-  CalcularTotalPuntos := parcial1 + parcial2 + cuestionarios
-  end;
-
-if modalidad = REMOTO then
-  begin
+  CalcularTotalPuntos := parcial1 + parcial2 + cuestionarios 
+else
   CalcularTotalPuntos := parcial1 + parcial2
-  end;
 end;
 
 { Puntos obtenidos en cuestionarios }
 procedure LeerPuntosCuestionarios(var puntosCuestionarios: integer; var error: char);
 var puntos, cont: integer;
 begin
+    { Inicializacion de variables }
     puntosCuestionarios := 0;
     cont := 0;
     error := NO_ERROR;
@@ -43,6 +38,7 @@ begin
     read(puntos);
     while puntos >= 0 do
     begin
+        { Evaluacion de rango puntos de cuestionarios ingresados, max 4 }
         if puntos > 4 then
             error := RANGO_INCORRECTO_CUESTIONARIOS
         else
@@ -51,6 +47,7 @@ begin
         read(puntos);
     end;
 
+    { Evaluacion de cantidad de puntos de cuestionarios ingresados, max 3 }
     if cont > 3 then
         error := CANTIDAD_INCORRECTA_CUESTIONARIOS;
 end;
