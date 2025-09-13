@@ -38,7 +38,7 @@ begin
     read(puntos);
     while puntos >= 0 do
     begin
-        { Evaluacion de rango puntos de cuestionarios ingresados, max 4 }
+        { Evaluacion del rango de los puntos del cuestionario ingresados, max 4 }
         if puntos > 4 then
             error := RANGO_INCORRECTO_CUESTIONARIOS
         else
