@@ -20,10 +20,10 @@ end;
 {Calculo total de puntos }
 function CalcularTotalPuntos(modalidad : char; parcial1, parcial2: real; cuestionarios: integer): real;
 begin
-if modalidad = PRESENCIAL then
-  CalcularTotalPuntos := parcial1 + parcial2 + cuestionarios 
-else
-  CalcularTotalPuntos := parcial1 + parcial2
+  case modalidad of
+    PRESENCIAL: CalcularTotalPuntos := parcial1 + parcial2 + cuestionarios;
+    REMOTO:  CalcularTotalPuntos := parcial1 + parcial2;
+  end;
 end;
 
 { Puntos obtenidos en cuestionarios }
