@@ -1,0 +1,4 @@
+1
+listas/ningun_estud.txt
+3
+0

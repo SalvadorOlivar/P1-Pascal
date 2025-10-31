@@ -1,0 +1,4 @@
+1
+listas/variada2.txt
+4
+0

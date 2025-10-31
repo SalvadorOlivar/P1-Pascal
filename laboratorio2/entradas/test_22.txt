@@ -1,0 +1,4 @@
+1
+listas/todos_remotos.txt
+4
+0

@@ -1,0 +1,58 @@
+
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
+Ingrese el nombre del archivo con los datos de los estudiantes: 
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
+Cursaron 4 estudiantes en modalidad presencial: 
+Cursaron 4 estudiantes en modalidad remota: 
+Modalidad Presencial: -> 500004 : 500006 : 500007 : 500008 | 
+Modalidad Remota: -> 500002 : 500003 : 500005 : 500009 | 
+
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
+Ingrese la modalidad a buscar (P/R) Ingrese el resultado a buscar (E/A/R) Se encontró el estudiante con CI:  500004
+El puntaje total del estudiante es: 78.00
+
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 

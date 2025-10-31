@@ -1,0 +1,4 @@
+1
+listas/lista2.txt
+7
+0

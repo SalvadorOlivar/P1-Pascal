@@ -1,0 +1,40 @@
+
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
+Ingrese el nombre del archivo con los datos de los estudiantes: 
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
+El total de puntos del primer estudiante es: 70.000
+
+----- MENÚ TAREA2 -----
+1. Cargar información de estudiantes 
+2. Imprimir la información de todos los estudiantes  
+3. Calcular el promedio de los estudiantes 
+4. Separar estudiantes según modalidad 
+5. Obtener resultado del estudiante 
+6. Calcular el total de puntos del primer estudiante del conjunto de estudiantes 
+7. Obtener resultado del primer estudiante del conjunto de estudiantes 
+8. Borrar a los estudiantes 
+0. Salir
+------------------------
+Seleccione una opción: 
