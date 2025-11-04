@@ -124,17 +124,20 @@ procedure buscarEstudianteCalificacion (cestudiantes:InfoEstudiantes;
                                         estudmod:EstudModalidad; 
                                         modalidad:char; resultado : ResultadoCurso; 
                                         var encontrado : boolean; var estud : Estudiante);
- var i : integer;
+ var p : InfoEstudModalidad;
  begin
- i := 1;
- encontrado := False;
-
- while encontrado = False do
-   begin
-   if (i <= cestudiantes.tope) and (cestudiantes.estudiantes[i]. =  )
-
-   encontrado = true
-   end;
-   
+  if modalidad = 'P' then
+    begin
+    p := estudmod.presencial;
+    while (p <> nil) and (resultadoEstudiante(cestudiantes.estudiantes[p^.indice]) <> resultado) do
+      p := p^.sig;
+    if p <> nil then
+      begin
+        encontrado := true;
+        estud := cestudiantes.estudiantes[p^.indice];
+      end
+    else
+      encontrado := false;
+    end;
  end;
     
