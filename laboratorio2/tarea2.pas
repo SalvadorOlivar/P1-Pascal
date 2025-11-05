@@ -58,9 +58,26 @@ function promedioEstudiantes (cestudiantes: InfoEstudiantes) : real;
 
 { Inserta un nodo en una lista ordenada de estudiantes }
 procedure insertarOrdenado(ciestud: integer; posicion: integer; var lmodord: InfoEstudModalidad);
- begin
-   writeln('Hola');
- end;
+var
+  nuevo, actual, anterior: InfoEstudModalidad;
+begin
+  new(nuevo);
+  nuevo^.ciest := ciestud;
+  nuevo^.indice := posicion;
+  nuevo^.sig := nil;
+  anterior := nil;
+  actual := lmodord;
+  while (actual <> nil) and (actual^.ciest < nuevo^.ciest) do
+  begin
+    anterior := actual;
+    actual := actual^.sig;
+  end;
+  if anterior = nil then
+    lmodord := nuevo
+  else
+    anterior^.sig := nuevo;
+  nuevo^.sig := actual;
+end;
 
 { Retorna dos listas de estudiantes, de acuerdo a la modalidad en que cursaor la asignatura 
   Retorna también la cantidad de estudiantes que cursaron en modalidad PRESENCIAL y la de los 
@@ -70,7 +87,6 @@ procedure estudEnModalidad(cestudiantes: InfoEstudiantes;
                            var npres,nrem:integer);
 var
   i: integer;
-  nuevo, actual, anterior: InfoEstudModalidad;
 begin
   estudmod.presencial := nil;
   estudmod.remoto := nil;
@@ -79,41 +95,15 @@ begin
   if cestudiantes.tope > 0 then
     for i := 1 to cestudiantes.tope do
     begin
-      new(nuevo);
-      nuevo^.ciest := cestudiantes.estudiantes[i].CI;
-      nuevo^.indice := i;
-      nuevo^.sig := nil;
       if cestudiantes.estudiantes[i].modalidad = PRESENCIAL then
       begin
         npres := npres + 1;
-        anterior := nil;
-        actual := estudmod.presencial;
-        while (actual <> nil) and (actual^.ciest < nuevo^.ciest) do
-        begin
-          anterior := actual;
-          actual := actual^.sig;
-        end;
-        if anterior = nil then
-          estudmod.presencial := nuevo
-        else
-          anterior^.sig := nuevo;
-        nuevo^.sig := actual;
+        insertarOrdenado(cestudiantes.estudiantes[i].CI, i, estudmod.presencial);
       end
       else
       begin
         nrem := nrem + 1;
-        anterior := nil;
-        actual := estudmod.remoto;
-        while (actual <> nil) and (actual^.ciest < nuevo^.ciest) do
-        begin
-          anterior := actual;
-          actual := actual^.sig;
-        end;
-        if anterior = nil then
-          estudmod.remoto := nuevo
-        else
-          anterior^.sig := nuevo;
-        nuevo^.sig := actual;
+        insertarOrdenado(cestudiantes.estudiantes[i].CI, i, estudmod.remoto);
       end;
     end;
 end;
