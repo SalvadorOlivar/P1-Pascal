@@ -1,6 +1,6 @@
 
 
-## Cómo ejecutar los casos de prueba de la Primera Tarea
+## Cómo ejecutar los casos de prueba de la Primera Tareas
 
 **Nota:**  Este test debe ser ejecutado en linux.
 
